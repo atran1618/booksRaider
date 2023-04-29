@@ -1,0 +1,125 @@
+.container {
+    position: relative;
+}
+
+.title {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 20px;
+    top: 30px;
+    position: right;
+    float: right;
+    
+}
+
+.sign {
+    position: right;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.textcover{
+    position: absolute;
+    left: 14%;
+}
+
+.form {
+    position: absolute;
+    text-align: left;
+    min-height: 500px;
+    top: 30px;
+    transform: translate(90%);
+}
+
+.cover {
+    width: 324px;
+    height: 516px;
+    margin: left;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: 110px;
+    margin-left: 10px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.bookContainer {
+    position: relative;
+    background: #FFFCFC;
+    border-left: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    width: 65%;
+    right: 0px;
+    top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    vertical-align: left;
+    margin-right: -50%;
+    transform: translate(23%, -15%);
+}
+
+.input {
+    background: #ffffff;
+    border: 1px solid #2e2d2d;
+    width: 20%;
+    height: 20px;
+    margin: left;
+    padding-left: 0px;
+}
+
+.mediuminput {
+    background: #ffffff;
+    border: 1px solid #2e2d2d;
+    width: 40%;
+    height: 20px;
+    margin: left;
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.largeinput {
+    background: #ffffff;
+    border: 1px solid #2e2d2d;
+    width: 90%;
+    height: 110px;
+    margin: left;
+    padding-left: 0px;
+    resize: none;
+}
+
+.return{
+    width: 60px;
+    min-width: 120px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.update{
+    margin-left: 160px;
+    width: 60px;
+    min-width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background:rgba(246, 169, 169, 0.948);
+}
+
+.text{
+    position: static;
+    margin: right;
+    transform: translate(70%);
+    padding-right: 15px;
+}
+
+.collections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

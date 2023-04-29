@@ -1,0 +1,144 @@
+.container {
+    margin-top: 110px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.booksContainer {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: inline-block;
+    width: 60%;
+    height: 220px;
+    padding-left: 25px;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+}
+
+.coverContainer {
+    height: 180px;
+    min-width: 150px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#title {
+    display: inline-block;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#author {
+    display: inline-block;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 25px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 45px;
+}
+
+#publisher  {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 18px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 75px;
+    font-weight: 400;
+}
+
+#pages  {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 18px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 135px;
+    font-weight: 400;
+}
+
+#pub  {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 18px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 105px;
+    font-weight: 400;
+}
+
+#star  {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 18px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 160px;
+    font-weight: 400;
+    height: 28px;
+}
+
+#rating  {
+    display: inline-block;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 23px;
+    margin-left: 235px;
+    position: absolute;
+    margin-top: 157px;
+    font-weight: 400;
+}
+
+@media (max-width: 1345px) {
+    .booksContainer {
+        width: 250px;
+    }
+
+    #author {
+        display: none;
+    }
+    
+    #publisher  {
+        display: none;
+    }
+    
+    #pages  {
+        display: none;
+    }
+    
+    #pub  {
+        display: none;
+    }
+
+    #title  {
+        display: none;
+    }
+
+    #star  {
+        margin-top: 60px;
+        margin-left: 160px;
+    }
+
+    #rating  {
+        margin-top: 60px;
+        margin-left: 190px;
+    }
+}

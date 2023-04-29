@@ -1,0 +1,14 @@
+.test {
+    font-size: 2rem;
+    color: gold
+}
+
+.star {
+    font-size: 2rem;
+    color: gray;
+}
+
+.container {
+    position: absolute;
+    left: 150px;
+}

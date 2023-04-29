@@ -1,0 +1,116 @@
+.stuff {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    width: 80%;
+    /*min-height: 100%;*/
+    max-width: 550px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+.background {
+        background: url('../public/bg.jpg');
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-attachment:scroll;
+        top: 0px;
+        width: 100%;
+        position: absolute;
+}
+
+.Sign {
+    position: relative;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.form {
+    position: relative;
+    text-align: center;
+    min-height: 500px;
+    top: 30px;
+}
+
+.login {
+    text-align: center;
+}
+
+.input::placeholder {
+    font-weight: 5px;
+    text-align: center;
+    font-size: 32px
+}
+
+.input {
+    background: linear-gradient(0deg, rgba(203, 119, 119, 0.2), 
+                rgba(203, 119, 119, 0.2)), 
+                #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #051135;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+    width: 80%;
+    height: 80px;
+    font-size: 32px; /*this must match ::placeholder otherwise the text will be misaligned vertically*/
+}
+
+.submit {
+    background: #FFE0E0;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 210px;
+    min-width: 100px;
+    height: 60px;
+    font-size: 32px;
+    /*margin-bottom: 40px;*/
+}
+
+#password {
+    margin-bottom: 320px;
+}
+
+#text {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.link-btn {
+    margin-top: 6px;
+    margin-bottom: calc(25px + 20px);
+    border: none;
+    background: none;
+    color: blue;
+    font-size: 24px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media only screen and (max-width: 930px) {
+    .input::placeholder {
+        content: "Username";
+        font-size: 21px;
+    }
+
+    .input {
+        margin-bottom: 27px;
+        width: 80%;
+        height: 50px;
+        font-size: 21px; /*this must match ::placeholder otherwise the text will be misaligned vertically*/
+    }
+
+    .submit {
+        margin-top: 16px;
+        margin-bottom: 54px;
+        width: 180px;
+        min-width: 180px;
+        height: 40px;
+        font-size: 24px;
+        /*margin-bottom: 40px;*/
+    }
+}

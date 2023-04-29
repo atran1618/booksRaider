@@ -1,0 +1,21 @@
+.active {
+    color: red;
+    margin-left: 1rem;
+    height:30px;
+    width: 30px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-left: 1rem;
+    height:30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.space {
+    margin-left: 1rem;
+}

@@ -1,0 +1,15 @@
+.stars {
+    display: inline-block;
+}
+
+.star {
+    font-size: 2rem;
+    cursor: pointer;
+    color: gray;
+}
+
+.test {
+    font-size: 2rem;
+    cursor: pointer;
+    color: gold
+}

@@ -1,0 +1,153 @@
+.left{
+    display: inline-block;
+    padding-left: 20px;
+    cursor: pointer;
+    font-weight: lighter;
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+.right {
+    margin-right: 50px;
+    cursor: pointer;
+    font-weight: lighter;
+    color: #FFFFFF;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.search{
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-right: 100px;
+    height: 35px;
+    width: 300px;
+    max-width: 500px;
+    min-width: 200px;
+    padding-top: 2px;
+    font-size:16px;
+    background-image: url(../public/SearchIcon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 10%;
+
+}
+
+.search::placeholder {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.icon{
+    padding-left: 20px;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.left:hover {
+    font-weight: 550;
+}
+
+.right:hover {
+    font-weight: 550;
+}
+
+.color {
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: #441C1C;
+    position: fixed;
+    width: 100vw;
+    min-width: 315px; /* for mobile */
+    z-index: 2;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+}
+
+.RContainer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 15px;
+    align-items: center;
+}
+
+
+/*@media (max-width: 930px) {
+    .right{
+        display: inline-block;
+        padding-right: 40px;
+        cursor: pointer;
+        font-weight: lighter;
+        color: #FFFFFF;
+        font-style: italic;
+        margin-left:50%;
+    }
+  }*/
+
+  /*CSS for Media Query: Mobile */
+@media (max-width: 930px)
+{
+    html {
+        min-width: 315px;
+    }
+}
+
+.totality {
+    min-width: 160px;
+    height: 100vh;
+    min-width: 315px;
+}
+
+.mobile-icon{
+    position: absolute;
+    left: max(calc(50% - 24px),calc(109px + 24px));
+    top: 6px;
+    width: 48px;
+    height: 48px;
+}
+
+.menu-pop-in {
+    height: 42px;
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    top: 14px;
+    left: 0;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.home-page-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none
+}
+
+.search-icon {
+    height: 42px;
+    min-width: 44px; /* 44 is the num idk y */
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    top: 12px;
+    left: max(calc(100% - 64px),calc(315px - 64px));
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }

@@ -1,0 +1,90 @@
+.container {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.userText {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.picture {
+    width: 150px;
+    height: 150px;
+}
+
+.add {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding-right: 130px;
+}
+
+.addImg {
+    cursor: pointer;
+}
+
+.bottomContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewText {
+    display: flex;
+    justify-content: center;
+}
+
+.reviewStyle {
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    font-weight: lighter;
+    height: 35px;
+    width: 300px;
+    font-size:16px;
+    background-image: url(../public/SearchIcon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 10%;
+}
+
+.search::placeholder {
+    font-style: italic;
+    font-size: 18px;
+}

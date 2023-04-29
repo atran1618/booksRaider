@@ -1,0 +1,10 @@
+.profile {
+    height: 45px;
+    width: 45px;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+.profile:hover {
+    cursor: pointer;
+}
