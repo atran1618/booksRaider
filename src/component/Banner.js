@@ -24,7 +24,7 @@ export const Banner = (props) => {
 
     async function handleEnterKey(event) {
         if (event.key === 'Enter') {
-            const response = await fetch(`http://localhost:3001/books/${searchTerm}`)
+            const response = await fetch(`https://books-raider-backend.onrender.com/books/${searchTerm}`)
             const data = await response.json();
 
             navigate(`/Home/${props.userID}`, {state: {searchedBooks: data}})

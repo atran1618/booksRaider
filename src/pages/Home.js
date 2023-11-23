@@ -36,7 +36,7 @@ export const Home = (props) => {
 
     // This if to get the all the books in the database
     useEffect(() => {
-        fetch('http://localhost:3001/books', {
+        fetch('https://books-raider-backend.onrender.com/books', {
             method: 'GET',
     
             headers: {
@@ -55,7 +55,7 @@ export const Home = (props) => {
             }
         })
 
-        fetch(`http://localhost:3001/users/644b40fc1692279a51d1d49a`)
+        fetch(`https://books-raider-backend.onrender.com/users/644b40fc1692279a51d1d49a`)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -147,7 +147,7 @@ export const Home = (props) => {
         }
 
         // Add it to the database
-        const result = await fetch ('http://localhost:3001/books', {
+        const result = await fetch ('https://books-raider-backend.onrender.com/books', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

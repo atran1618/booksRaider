@@ -14,7 +14,7 @@ export const ReviewList = (props) => {
     useEffect(() => {
         async function getReviewsData() {
             const reviewPromises = props.reviewsID.map((reviewID) => {
-                return fetch(`http://localhost:3001/reviews/${reviewID}`)
+                return fetch(`https://books-raider-backend.onrender.com/reviews/${reviewID}`)
                         .then(response => response.json());
             })
 
@@ -29,7 +29,7 @@ export const ReviewList = (props) => {
     useEffect(() => {
         async function getBooksData() {
             const bookPromises = reviewsData.map((reviewObject) => {
-                return fetch(`http://localhost:3001/books/${reviewObject.bookID}`)
+                return fetch(`https://books-raider-backend.onrender.com/books/${reviewObject.bookID}`)
                         .then(response => response.json());
             })
             const books = await Promise.all(bookPromises);

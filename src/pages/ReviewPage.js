@@ -36,19 +36,19 @@ export const ReviewPage = (props) =>  {
 
     useEffect(() => {
         async function getReviewData(reviewID) {
-            const response = await fetch(`http://localhost:3001/reviews/${reviewID}`)
+            const response = await fetch(`https://books-raider-backend.onrender.com/reviews/${reviewID}`)
             const data = await response.json();
             setReviewData(data); 
         }
 
         async function getBookData(bookID) {
-            const response = await fetch(`http://localhost:3001/books/${bookID}`)
+            const response = await fetch(`https://books-raider-backend.onrender.com/books/${bookID}`)
             const data = await response.json();
             setBookData(data);
         }
 
         async function getUserData(userID) {
-            const response = await fetch(`http://localhost:3001/users/${userID}`)
+            const response = await fetch(`https://books-raider-backend.onrender.com/users/${userID}`)
             const data = await response.json();
             setUserData(data);
         }
@@ -60,7 +60,7 @@ export const ReviewPage = (props) =>  {
 
     async function handleDelete() {
         // Delete the review by passing reviewID
-        const response = await fetch(`http://localhost:3001/reviews/${reviewID}`, {
+        const response = await fetch(`https://books-raider-backend.onrender.com/reviews/${reviewID}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ export const ReviewPage = (props) =>  {
             "reviews": updatedReviews,
         }
 
-        fetch(`http://localhost:3001/books/${bookData._id}`, {
+        fetch(`https://books-raider-backend.onrender.com/books/${bookData._id}`, {
             method: 'PATCH',
             // The headers is required for it to work
             headers: {
@@ -99,7 +99,7 @@ export const ReviewPage = (props) =>  {
             "reviews": userReviews,
         }
 
-        fetch(`http://localhost:3001/users/${userID}`, {
+        fetch(`https://books-raider-backend.onrender.com/users/${userID}`, {
             method: 'PATCH',
             // The headers is required for it to work
             headers: {

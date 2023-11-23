@@ -17,7 +17,7 @@ export const SignUpBox = (props) => {
     data["reviewCount"] = 0;
     data["admin"] = false;
 
-    fetch('http://localhost:3001/auth/register', {
+    fetch('https://books-raider-backend.onrender.com/auth/register', {
       method: 'POST',
       // The headers is required for it to work
       headers: {

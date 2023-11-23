@@ -14,7 +14,7 @@ export default function Reviews(props) {
     useEffect(() => {
         async function getReviewsData() {
             const reviewPromises = props.reviews.map((reviewID) => {
-                return fetch(`http://localhost:3001/reviews/${reviewID}`)
+                return fetch(`https://books-raider-backend.onrender.com/reviews/${reviewID}`)
                 .then(response => response.json())
             });
             const reviewsData = await Promise.all(reviewPromises);

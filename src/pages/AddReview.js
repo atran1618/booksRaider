@@ -38,19 +38,19 @@ export const AddReview = (props) => {
     useEffect(() => {
 
         async function getBookData(bookID) {
-            const response = await fetch(`http://localhost:3001/books/${bookID}`)
+            const response = await fetch(`https://books-raider-backend.onrender.com/books/${bookID}`)
             const data = await response.json();
             setBookData(data);
         }
 
         async function getUserData(userID) {
-            const response = await fetch(`http://localhost:3001/users/${userID}`)
+            const response = await fetch(`https://books-raider-backend.onrender.com/users/${userID}`)
             const data = await response.json();
             setUserData(data);
         }
 
         async function getReviewData(reviewID) {
-            const response = await fetch(`http://localhost:3001/reviews/${reviewID}`)
+            const response = await fetch(`https://books-raider-backend.onrender.com/reviews/${reviewID}`)
             const data = await response.json()
             setEditFlag(true);
             setReviewData(data);
@@ -88,7 +88,7 @@ export const AddReview = (props) => {
                 "review": text,
             };
 
-            fetch(`http://localhost:3001/reviews/${reviewData._id}`, {
+            fetch(`https://books-raider-backend.onrender.com/reviews/${reviewData._id}`, {
                 method: 'PATCH',
                 // The headers is required for it to work
                 headers: {
@@ -102,7 +102,7 @@ export const AddReview = (props) => {
                 "totalScore": bookData.totalScore +  rating - oldRating,
             }
 
-            fetch(`http://localhost:3001/books/${bookID}`, {
+            fetch(`https://books-raider-backend.onrender.com/books/${bookID}`, {
                 method: 'PATCH',
                 // The headers is required for it to work
                 headers: {
@@ -121,7 +121,7 @@ export const AddReview = (props) => {
         data["bookID"] = bookID;
 
         // POST the review
-        const response = await fetch('http://localhost:3001/reviews', {
+        const response = await fetch('https://books-raider-backend.onrender.com/reviews', {
             method: 'POST',
             // The headers is required for it to work
             headers: {
@@ -139,7 +139,7 @@ export const AddReview = (props) => {
         };
 
         // Update the book infromation
-        fetch(`http://localhost:3001/books/${bookID}`, {
+        fetch(`https://books-raider-backend.onrender.com/books/${bookID}`, {
             method: 'PATCH',
             // The headers is required for it to work
             headers: {
@@ -154,7 +154,7 @@ export const AddReview = (props) => {
         }
 
         // Update the user information
-        fetch(`http://localhost:3001/users/${userData._id}`, {
+        fetch(`https://books-raider-backend.onrender.com/users/${userData._id}`, {
             method: 'PATCH',
             // The headers is required for it to work
             headers: {

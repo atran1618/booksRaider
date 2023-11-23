@@ -17,10 +17,10 @@ export default function BooksList(props) {
             setLoadingData1(false);
         else
         {
-            fetch(`http://localhost:3001/reviews/${props.user.reviews[0]}`)
+            fetch(`https://books-raider-backend.onrender.com/reviews/${props.user.reviews[0]}`)
             .then(res => res.json())
             .then((result) => {
-                fetch(`http://localhost:3001/books/${result.bookID}`)
+                fetch(`https://books-raider-backend.onrender.com/books/${result.bookID}`)
                 .then(res => res.json())
                 .then((result) => {
                     setData(data => [...data,result])
@@ -34,11 +34,11 @@ export default function BooksList(props) {
             setLoadingData2(false);
         else
         {
-            fetch(`http://localhost:3001/reviews/${props.user.reviews[1]}`)
+            fetch(`https://books-raider-backend.onrender.com/reviews/${props.user.reviews[1]}`)
             .then(res => res.json())
             .then((result) => {
                 
-                fetch(`http://localhost:3001/books/${result.bookID}`)
+                fetch(`https://books-raider-backend.onrender.com/books/${result.bookID}`)
                 .then(res => res.json())
                 .then((result) => {
                     setData(data => [...data,result])
@@ -52,11 +52,11 @@ export default function BooksList(props) {
             setLoadingData3(false);
         else
         {
-            fetch(`http://localhost:3001/reviews/${props.user.reviews[2]}`)
+            fetch(`https://books-raider-backend.onrender.com/reviews/${props.user.reviews[2]}`)
             .then(res => res.json())
             .then((result) => {
                 
-                fetch(`http://localhost:3001/books/${result.bookID}`)
+                fetch(`https://books-raider-backend.onrender.com/books/${result.bookID}`)
                 .then(res => res.json())
                 .then((result) => {
                     setData(data => [...data,result])
@@ -71,11 +71,11 @@ export default function BooksList(props) {
             setLoadingData4(false);
         else
         {
-            fetch(`http://localhost:3001/reviews/${props.user.reviews[3]}`)
+            fetch(`https://books-raider-backend.onrender.com/reviews/${props.user.reviews[3]}`)
             .then(res => res.json())
             .then((result) => {
                 
-                fetch(`http://localhost:3001/books/${result.bookID}`)
+                fetch(`https://books-raider-backend.onrender.com/books/${result.bookID}`)
                 .then(res => res.json())
                 .then((result) => {
                     setData(data => [...data,result])
@@ -89,11 +89,11 @@ export default function BooksList(props) {
             setLoadingData5(false);
         else
         {
-            fetch(`http://localhost:3001/reviews/${props.user.reviews[4]}`)
+            fetch(`https://books-raider-backend.onrender.com/reviews/${props.user.reviews[4]}`)
             .then(res => res.json())
             .then((result) => {
                 
-                fetch(`http://localhost:3001/books/${result.bookID}`)
+                fetch(`https://books-raider-backend.onrender.com/books/${result.bookID}`)
                 .then(res => res.json())
                 .then((result) => {
                     setData(data => [...data,result])
